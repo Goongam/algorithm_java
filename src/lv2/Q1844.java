@@ -1,5 +1,6 @@
 package lv2;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class Q1844 {
@@ -9,12 +10,14 @@ public class Q1844 {
 
 	}
 
-	LinkedList<Integer[]> queue = new LinkedList();
+	LinkedList<Integer[]> queue = new LinkedList<Integer[]>();
+
     int[][] maps = {{}};
     int[][] dir = {{1,0},{-1,0},{0,-1},{0,1}};
     
     void bfs(){
         Integer[] start = {0,0};
+        
         
         queue.add(start);
         // maps[0][0] = 0;
